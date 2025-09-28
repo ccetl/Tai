@@ -116,7 +116,7 @@ namespace UI.ViewModels
             {
                 UnSelectedIcon = Controls.Base.IconTypes.EndPoint,
                 SelectedIcon = IconTypes.EndPointSolid,
-                Title = "分类",
+                Title = Translated("main.categories"),
                 ID = 3,
                 Uri = nameof(CategoryPage),
 

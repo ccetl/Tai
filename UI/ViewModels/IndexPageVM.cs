@@ -75,7 +75,8 @@ namespace UI.ViewModels
         {
             TabbarData = new System.Collections.ObjectModel.ObservableCollection<string>()
             {
-                "今日","本周"
+                Translated("page.index.time.today"),
+                Translated("page.index.time.week")
             };
 
             TabbarSelectedIndex = 0;
@@ -91,12 +92,12 @@ namespace UI.ViewModels
                 new SelectItemModel()
                 {
                     Id=0,
-                    Name="应用"
+                    Name=Translated("page.index.apps"),
                 },
                 new SelectItemModel()
                 {
                     Id=1,
-                    Name="网站"
+                    Name=Translated("page.index.websites"),
                 }
             };
             MoreType = MoreTypeOptions[0];

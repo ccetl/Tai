@@ -19,6 +19,31 @@
             <data name="time.hoursWithMinutes" xml:space="preserve">
                 <value>{0}小时{1}分</value>
             </data>
+            
+            <!-- IndexPageVM.cs -->
+            <data name="page.index.time.today" xml:space="preserve">
+                <value>今日</value>
+            </data>
+            <data name="page.index.time.week" xml:space="preserve">
+                <value>本周</value>
+            </data>
+            <data name="page.index.apps" xml:space="preserve">
+                <value>应用</value>
+            </data>
+            <data name="page.index.websites" xml:space="preserve">
+                <value>网站</value>
+            </data>
+            
+            <!-- IndexPage.xaml -->
+            <data name="page.index.top" xml:space="preserve">
+                <value>最为频繁</value>
+            </data>
+            <data name="page.index.refresh" xml:space="preserve">
+                <value>刷新</value>
+            </data>
+            <data name="page.index.more" xml:space="preserve">
+                <value>更多</value>
+            </data>
 
             <!-- MainViewModel.cs -->
             <data name="main.details" xml:space="preserve">
@@ -29,6 +54,14 @@
             </data>
             <data name="main.overview" xml:space="preserve">
                 <value>概览</value>
+            </data>
+            <data name="main.categories" xml:space="preserve">
+                <value>分类</value>
+            </data>
+            
+            <!-- MainWindow.xaml -->
+            <data name="main.settings" xml:space="preserve">
+                <value>设置</value>
             </data>
 
             <!-- DetailPageVM.cs -->
@@ -257,6 +290,14 @@
             </data>
             <data name="config.general.isWebEnabled.description" xml:space="preserve">
                 <value>统计浏览器的网站访问数据，支持：Google Chrome、MSEdge或任何能够安装Chrome拓展的浏览器。请点击 “关于 &gt; 浏览器统计插件” 了解如何安装和使用此功能。</value>
+            </data>
+            
+            <!-- EmptyData.xaml -->
+            <data name="emptyData.noData" xml:space="preserve">
+                <value>暂时没有数据</value>
+            </data>
+            <data name="emptyData.tooltip" xml:space="preserve">
+                <value>什么都没有</value>
             </data>
         </xsd:element>
     </xsd:schema>

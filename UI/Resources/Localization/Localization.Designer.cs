@@ -483,6 +483,33 @@ namespace UI.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No data available.
+        /// </summary>
+        internal static string emptyData_noData {
+            get {
+                return ResourceManager.GetString("emptyData.noData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nothing.
+        /// </summary>
+        internal static string emptyData_tooltip {
+            get {
+                return ResourceManager.GetString("emptyData.tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categories.
+        /// </summary>
+        internal static string main_categories {
+            get {
+                return ResourceManager.GetString("main.categories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Details.
         /// </summary>
         internal static string main_details {
@@ -497,6 +524,15 @@ namespace UI.Resources.Localization {
         internal static string main_overview {
             get {
                 return ResourceManager.GetString("main.overview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string main_settings {
+            get {
+                return ResourceManager.GetString("main.settings", resourceCulture);
             }
         }
         
@@ -614,6 +650,69 @@ namespace UI.Resources.Localization {
         internal static string page_detail_setCategory {
             get {
                 return ResourceManager.GetString("page.detail.setCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apps.
+        /// </summary>
+        internal static string page_index_apps {
+            get {
+                return ResourceManager.GetString("page.index.apps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        internal static string page_index_more {
+            get {
+                return ResourceManager.GetString("page.index.more", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh.
+        /// </summary>
+        internal static string page_index_refresh {
+            get {
+                return ResourceManager.GetString("page.index.refresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today.
+        /// </summary>
+        internal static string page_index_time_today {
+            get {
+                return ResourceManager.GetString("page.index.time.today", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This Week.
+        /// </summary>
+        internal static string page_index_time_week {
+            get {
+                return ResourceManager.GetString("page.index.time.week", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top.
+        /// </summary>
+        internal static string page_index_top {
+            get {
+                return ResourceManager.GetString("page.index.top", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Websites.
+        /// </summary>
+        internal static string page_index_websites {
+            get {
+                return ResourceManager.GetString("page.index.websites", resourceCulture);
             }
         }
         

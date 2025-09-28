@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:UI.Views" xmlns:charts="clr-namespace:UI.Controls.Charts" xmlns:Tabbar="clr-namespace:UI.Controls.Tabbar" xmlns:select="clr-namespace:UI.Controls.Select" xmlns:base="clr-namespace:UI.Controls.Base" xmlns:DatePickerBar="clr-namespace:UI.Controls.DatePickerBar" xmlns:converter="clr-namespace:UI.Controls.Converters"
+      xmlns:loc="clr-namespace:UI.Markup"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ChartPage" Foreground="{DynamicResource StandardTextBrush}" Background="Transparent">
@@ -14,7 +15,7 @@
     </Page.ContextMenu>
     <StackPanel Margin="20">
         <StackPanel Orientation="Horizontal" Margin="0,5,0,20" >
-            <TextBlock Text="统计" FontSize="18" VerticalAlignment="Center"/>
+            <TextBlock Text="{loc:Localization Key=main.statistics}" FontSize="18" VerticalAlignment="Center"/>
             <select:Select Margin="10,0,0,0" VerticalAlignment="Top" Padding="10,5"  IsShowIcon="False" SelectedItem="{Binding ShowType,Mode=TwoWay}" Options="{Binding ShowTypeOptions}"/>
         </StackPanel>
         <Tabbar:Tabbar  Data="{Binding TabbarData}" SelectedIndex="{Binding TabbarSelectedIndex,Mode=TwoWay}" Width="180" HorizontalAlignment="Left"/>

@@ -19,6 +19,31 @@
                 <value>{0}h {1}min</value>
             </data>
             
+            <!-- IndexPageVM.cs -->
+            <data name="page.index.time.today" xml:space="preserve">
+                <value>Today</value>
+            </data>
+            <data name="page.index.time.week" xml:space="preserve">
+                <value>This Week</value>
+            </data>
+            <data name="page.index.apps" xml:space="preserve">
+                <value>Apps</value>
+            </data>
+            <data name="page.index.websites" xml:space="preserve">
+                <value>Websites</value>
+            </data>
+            
+            <!-- IndexPage.xaml -->
+            <data name="page.index.top" xml:space="preserve">
+                <value>Top</value>
+            </data>
+            <data name="page.index.refresh" xml:space="preserve">
+                <value>Refresh</value>
+            </data>
+            <data name="page.index.more" xml:space="preserve">
+                <value>Other</value>
+            </data>
+            
             <!-- MainViewModel.cs -->
             <data name="main.details" xml:space="preserve">
                 <value>Details</value>
@@ -28,6 +53,14 @@
             </data>
             <data name="main.overview" xml:space="preserve">
                 <value>Overview</value>
+            </data>
+            <data name="main.categories" xml:space="preserve">
+                <value>Categories</value>
+            </data>
+            
+            <!-- MainWindow.xaml -->
+            <data name="main.settings" xml:space="preserve">
+                <value>Settings</value>
             </data>
             
             <!-- DetailPageVM.cs -->
@@ -259,6 +292,14 @@
             </data>
             <data name="config.general.isWebEnabled.description" xml:space="preserve">
                 <value>Track website visits in supported browsers: Google Chrome, MS Edge, or any browser supporting Chrome extensions. Go to “About &gt; Browser Tracking Plugin” for installation and usage instructions.</value>
+            </data>
+            
+            <!-- EmptyData.xaml -->
+            <data name="emptyData.noData" xml:space="preserve">
+                <value>No data available</value>
+            </data>
+            <data name="emptyData.tooltip" xml:space="preserve">
+                <value>Nothing</value>
             </data>
         </xsd:element>
     </xsd:schema>

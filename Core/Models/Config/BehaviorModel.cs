@@ -32,7 +32,7 @@ namespace Core.Models.Config
         public List<string> IgnoreProcessList { get; set; } = new List<string>();
 
         /// <summary>
-        /// 忽略的 URL 列表
+        /// 忽略的进程列表
         /// </summary>
         [Config(
             IsCanImportExport = true,
