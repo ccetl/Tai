@@ -92,12 +92,12 @@ namespace UI.ViewModels
                 new SelectItemModel()
                 {
                     Id=0,
-                    Name=Translated("page.index.apps"),
+                    Name=Translated("page.apps")
                 },
                 new SelectItemModel()
                 {
                     Id=1,
-                    Name=Translated("page.index.websites"),
+                    Name=Translated("page.websites")
                 }
             };
             MoreType = MoreTypeOptions[0];

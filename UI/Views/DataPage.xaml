@@ -22,7 +22,7 @@
             <TextBlock Text="{loc:Localization Key=main.details}" FontSize="18" VerticalAlignment="Center"/>
             <select:Select Margin="10,0,0,0" VerticalAlignment="Top" Padding="10,5"  IsShowIcon="False" SelectedItem="{Binding ShowType,Mode=TwoWay}" Options="{Binding ShowTypeOptions}"/>
         </StackPanel>
-        <Tabbar:Tabbar Width="145" HorizontalAlignment="Left" Grid.Row="1" Data="{Binding TabbarData}" SelectedIndex="{Binding TabbarSelectedIndex,Mode=TwoWay}"/>
+        <Tabbar:Tabbar MinWidth="145" HorizontalAlignment="Left" Grid.Row="1" Data="{Binding TabbarData}" SelectedIndex="{Binding TabbarSelectedIndex,Mode=TwoWay}"/>
 
 
         <TabControl 

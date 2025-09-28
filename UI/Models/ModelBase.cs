@@ -25,18 +25,20 @@ namespace UI.Models
             new SelectItemModel()
                 {
                     Id=0,
-                    Name="应用"
+                    Name=LocalizationServicer.Instance.Translated("page.apps")
                 },
                 new SelectItemModel()
                 {
                     Id=1,
-                    Name="网站"
+                    Name=LocalizationServicer.Instance.Translated("page.websites")
                 }
         };
+        
         protected ModelBase(ILocalizationServicer localizationServicer) : base(localizationServicer)
         {
             ShowType = ShowTypeOptions[0];
         }
+        
         public virtual void Dispose() { }
     }
 }

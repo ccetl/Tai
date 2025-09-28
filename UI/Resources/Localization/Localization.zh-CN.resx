@@ -19,6 +19,30 @@
             <data name="time.hoursWithMinutes" xml:space="preserve">
                 <value>{0}小时{1}分</value>
             </data>
+            <data name="time.daily" xml:space="preserve">
+                <value>按天</value>
+            </data>
+            <data name="time.weekly" xml:space="preserve">
+                <value>按周</value>
+            </data>
+            <data name="time.monthly" xml:space="preserve">
+                <value>按月</value>
+            </data>
+            <data name="time.yearly" xml:space="preserve">
+                <value>按年</value>
+            </data>
+            <data name="page.refresh" xml:space="preserve">
+                <value>刷新</value>
+            </data>
+            <data name="page.top" xml:space="preserve">
+                <value>最为频繁</value>
+            </data>
+            <data name="page.apps" xml:space="preserve">
+                <value>应用</value>
+            </data>
+            <data name="page.websites" xml:space="preserve">
+                <value>网站</value>
+            </data>
             
             <!-- IndexPageVM.cs -->
             <data name="page.index.time.today" xml:space="preserve">
@@ -27,20 +51,8 @@
             <data name="page.index.time.week" xml:space="preserve">
                 <value>本周</value>
             </data>
-            <data name="page.index.apps" xml:space="preserve">
-                <value>应用</value>
-            </data>
-            <data name="page.index.websites" xml:space="preserve">
-                <value>网站</value>
-            </data>
             
             <!-- IndexPage.xaml -->
-            <data name="page.index.top" xml:space="preserve">
-                <value>最为频繁</value>
-            </data>
-            <data name="page.index.refresh" xml:space="preserve">
-                <value>刷新</value>
-            </data>
             <data name="page.index.more" xml:space="preserve">
                 <value>更多</value>
             </data>
@@ -125,6 +137,46 @@
             </data>
             <data name="page.settings.category.about" xml:space="preserve">
                 <value>关于</value>
+            </data>
+            
+            <!-- ChartPageVM.cs -->
+            <data name="page.chart.thisWeek" xml:space="preserve">
+                <value>本周</value>
+            </data>
+            <data name="page.chart.lastWeek" xml:space="preserve">
+                <value>上周</value>
+            </data>
+            <data name="page.chart.view.default" xml:space="preserve">
+                <value>默认视图</value>
+            </data>
+            <data name="page.chart.view.summary" xml:space="preserve">
+                <value>汇总视图</value>
+            </data>
+            <data name="page.chart.view.categories" xml:space="preserve">
+                <value>分类视图</value>
+            </data>
+            <data name="page.chart.uncategorized" xml:space="preserve">
+                <value>未分类</value>
+            </data>
+            
+            <!-- ChartPage.xaml -->
+            <data name="page.chart.hours" xml:space="preserve">
+                <value>小时</value>
+            </data>
+            <data name="page.chart.total" xml:space="preserve">
+                <value>总计</value>
+            </data>
+            <data name="page.chart.unique" xml:space="preserve">
+                <value>个</value>
+            </data>
+            <data name="page.chart.numberOfApps" xml:space="preserve">
+                <value>应用量</value>
+            </data>
+            <data name="page.chart.longestUsage" xml:space="preserve">
+                <value>最长使用</value>
+            </data>
+            <data name="page.chart.categories" xml:space="preserve">
+                <value>分类</value>
             </data>
             
             <!-- SettingPage.xaml -->

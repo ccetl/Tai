@@ -63,7 +63,9 @@ namespace UI.ViewModels
 
             TabbarData = new System.Collections.ObjectModel.ObservableCollection<string>()
             {
-                "按天","按月","按年"
+                Translated("time.daily"),
+                Translated("time.monthly"),
+                Translated("time.yearly")
             };
 
             TabbarSelectedIndex = 0;

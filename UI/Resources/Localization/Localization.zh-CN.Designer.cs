@@ -546,6 +546,123 @@ namespace UI.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 应用.
+        /// </summary>
+        internal static string page_apps {
+            get {
+                return ResourceManager.GetString("page.apps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 分类.
+        /// </summary>
+        internal static string page_chart_categories {
+            get {
+                return ResourceManager.GetString("page.chart.categories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 小时.
+        /// </summary>
+        internal static string page_chart_hours {
+            get {
+                return ResourceManager.GetString("page.chart.hours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 上周.
+        /// </summary>
+        internal static string page_chart_lastWeek {
+            get {
+                return ResourceManager.GetString("page.chart.lastWeek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 最长使用.
+        /// </summary>
+        internal static string page_chart_longestUsage {
+            get {
+                return ResourceManager.GetString("page.chart.longestUsage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 应用量.
+        /// </summary>
+        internal static string page_chart_numberOfApps {
+            get {
+                return ResourceManager.GetString("page.chart.numberOfApps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 本周.
+        /// </summary>
+        internal static string page_chart_thisWeek {
+            get {
+                return ResourceManager.GetString("page.chart.thisWeek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 总计.
+        /// </summary>
+        internal static string page_chart_total {
+            get {
+                return ResourceManager.GetString("page.chart.total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 未分类.
+        /// </summary>
+        internal static string page_chart_uncategorized {
+            get {
+                return ResourceManager.GetString("page.chart.uncategorized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 个.
+        /// </summary>
+        internal static string page_chart_unique {
+            get {
+                return ResourceManager.GetString("page.chart.unique", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 分类视图.
+        /// </summary>
+        internal static string page_chart_view_categories {
+            get {
+                return ResourceManager.GetString("page.chart.view.categories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 默认视图.
+        /// </summary>
+        internal static string page_chart_view_default {
+            get {
+                return ResourceManager.GetString("page.chart.view.default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 汇总视图.
+        /// </summary>
+        internal static string page_chart_view_summary {
+            get {
+                return ResourceManager.GetString("page.chart.view.summary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 已添加至白名单 {0}.
         /// </summary>
         internal static string page_detail_addedToWhitelist {
@@ -654,29 +771,11 @@ namespace UI.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 应用.
-        /// </summary>
-        internal static string page_index_apps {
-            get {
-                return ResourceManager.GetString("page.index.apps", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to 更多.
         /// </summary>
         internal static string page_index_more {
             get {
                 return ResourceManager.GetString("page.index.more", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 刷新.
-        /// </summary>
-        internal static string page_index_refresh {
-            get {
-                return ResourceManager.GetString("page.index.refresh", resourceCulture);
             }
         }
         
@@ -699,20 +798,11 @@ namespace UI.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 最为频繁.
+        ///   Looks up a localized string similar to 刷新.
         /// </summary>
-        internal static string page_index_top {
+        internal static string page_refresh {
             get {
-                return ResourceManager.GetString("page.index.top", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 网站.
-        /// </summary>
-        internal static string page_index_websites {
-            get {
-                return ResourceManager.GetString("page.index.websites", resourceCulture);
+                return ResourceManager.GetString("page.refresh", resourceCulture);
             }
         }
         
@@ -789,6 +879,33 @@ namespace UI.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 最为频繁.
+        /// </summary>
+        internal static string page_top {
+            get {
+                return ResourceManager.GetString("page.top", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 网站.
+        /// </summary>
+        internal static string page_websites {
+            get {
+                return ResourceManager.GetString("page.websites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 按天.
+        /// </summary>
+        internal static string time_daily {
+            get {
+                return ResourceManager.GetString("time.daily", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0}小时.
         /// </summary>
         internal static string time_hours {
@@ -825,11 +942,38 @@ namespace UI.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 按月.
+        /// </summary>
+        internal static string time_monthly {
+            get {
+                return ResourceManager.GetString("time.monthly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0}秒.
         /// </summary>
         internal static string time_seconds {
             get {
                 return ResourceManager.GetString("time.seconds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 按周.
+        /// </summary>
+        internal static string time_weekly {
+            get {
+                return ResourceManager.GetString("time.weekly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 按年.
+        /// </summary>
+        internal static string time_yearly {
+            get {
+                return ResourceManager.GetString("time.yearly", resourceCulture);
             }
         }
     }
