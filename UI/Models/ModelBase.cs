@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UI.Controls.Select;
+using UI.Servicers;
 
 namespace UI.Models
 {
-    public class ModelBase : UINotifyPropertyChanged
+    public class ModelBase : LocalizedView
     {
         private SelectItemModel ShowType_;
         /// <summary>
@@ -32,7 +33,7 @@ namespace UI.Models
                     Name="网站"
                 }
         };
-        public ModelBase()
+        protected ModelBase(ILocalizationServicer localizationServicer) : base(localizationServicer)
         {
             ShowType = ShowTypeOptions[0];
         }

@@ -35,6 +35,7 @@ namespace UI.ViewModels
         private readonly IWebSiteContextMenuServicer _webSiteContextMenu;
         public List<SelectItemModel> MoreTypeOptions { get; set; }
         public IndexPageVM(
+            ILocalizationServicer localizationService,
             IData data,
             MainViewModel main,
             IMain mainServicer,
@@ -42,7 +43,7 @@ namespace UI.ViewModels
             IInputServicer inputServicer,
             IAppConfig appConfig,
             IWebData webData_,
-            IWebSiteContextMenuServicer webSiteContext_)
+            IWebSiteContextMenuServicer webSiteContext_) : base(localizationService)
         {
             this.data = data;
             this.main = main;
@@ -274,7 +275,7 @@ namespace UI.ViewModels
                 bindModel.Data = item;
                 bindModel.Name = !string.IsNullOrEmpty(item.AppModel?.Alias) ? item.AppModel.Alias : string.IsNullOrEmpty(item.AppModel?.Description) ? item.AppModel.Name : item.AppModel.Description;
                 bindModel.Value = item.Time;
-                bindModel.Tag = Time.ToString(item.Time);
+                bindModel.Tag = Translated(Time.ToString(item.Time));
                 bindModel.PopupText = item.AppModel?.File;
                 bindModel.Icon = item.AppModel?.IconFile;
                 bindModel.DateTime = item.Date;
@@ -293,7 +294,7 @@ namespace UI.ViewModels
                 bindModel.Data = item;
                 bindModel.Name = !string.IsNullOrEmpty(item.Alias) ? item.Alias : item.Title;
                 bindModel.Value = item.Duration;
-                bindModel.Tag = Time.ToString(item.Duration);
+                bindModel.Tag = Translated(Time.ToString(item.Duration));
                 bindModel.PopupText = item.Domain;
                 bindModel.Icon = item.IconFile;
                 resData.Add(bindModel);

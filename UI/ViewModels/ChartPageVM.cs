@@ -35,7 +35,15 @@ namespace UI.ViewModels
         public Command RefreshCommand { get; set; }
         public List<SelectItemModel> ChartDataModeOptions { get; set; }
 
-        public ChartPageVM(IData data, ICategorys categorys, MainViewModel mainVM, IAppContextMenuServicer appContextMenuServicer, IInputServicer inputServicer, IWebData webData_, IWebSiteContextMenuServicer webSiteContextMenu_)
+        public ChartPageVM(
+            ILocalizationServicer localizationServicer,
+            IData data,
+            ICategorys categorys,
+            MainViewModel mainVM,
+            IAppContextMenuServicer appContextMenuServicer,
+            IInputServicer inputServicer,
+            IWebData webData_,
+            IWebSiteContextMenuServicer webSiteContextMenu_) : base(localizationServicer)
         {
             this.data = data;
             this.categorys = categorys;
@@ -684,7 +692,7 @@ namespace UI.ViewModels
                 bindModel.Data = item;
                 bindModel.Name = !string.IsNullOrEmpty(item.AppModel?.Alias) ? item.AppModel.Alias : string.IsNullOrEmpty(item.AppModel?.Description) ? item.AppModel.Name : item.AppModel.Description;
                 bindModel.Value = item.Time;
-                bindModel.Tag = Time.ToString(item.Time);
+                bindModel.Tag = Translated(Time.ToString(item.Time));
                 bindModel.PopupText = item.AppModel?.File;
                 bindModel.Icon = item.AppModel?.IconFile;
                 resData.Add(bindModel);
@@ -748,7 +756,7 @@ namespace UI.ViewModels
                         bindModel.Data = item;
                         bindModel.Name = !string.IsNullOrEmpty(item.AppModel?.Alias) ? item.AppModel.Alias : string.IsNullOrEmpty(item.AppModel?.Description) ? item.AppModel.Name : item.AppModel.Description;
                         bindModel.Value = item.Time;
-                        bindModel.Tag = Time.ToString(item.Time);
+                        bindModel.Tag = Translated(Time.ToString(item.Time));
                         bindModel.PopupText = item.AppModel?.File;
                         bindModel.Icon = item.AppModel?.IconFile;
                         chartsDatas.Add(bindModel);
@@ -762,7 +770,7 @@ namespace UI.ViewModels
                         bindModel.Data = item;
                         bindModel.Name = !string.IsNullOrEmpty(item.AppModel?.Alias) ? item.AppModel.Alias : string.IsNullOrEmpty(item.AppModel?.Description) ? item.AppModel.Name : item.AppModel.Description;
                         bindModel.Value = item.Time;
-                        bindModel.Tag = Time.ToString(item.Time);
+                        bindModel.Tag = Translated(Time.ToString(item.Time));
                         bindModel.PopupText = item.AppModel?.File;
                         bindModel.Icon = item.AppModel?.IconFile;
                         chartsDatas.Add(bindModel);
@@ -805,7 +813,7 @@ namespace UI.ViewModels
                     bindModel.Value = item.Value;
                     bindModel.Data = item;
                     bindModel.Color = item.ID == 0 ? "#ccc" : category.Color;
-                    bindModel.PopupText = bindModel.Name + " " + Time.ToString((int)item.Value);
+                    bindModel.PopupText = bindModel.Name + " " + Translated(Time.ToString((int)item.Value));
                     bindModel.Icon = item.ID == 0 ? "" : category.IconFile;
                     chartsDatas.Add(bindModel);
                 }
@@ -953,7 +961,7 @@ namespace UI.ViewModels
                 bindModel.Data = item;
                 bindModel.Name = !string.IsNullOrEmpty(item.Alias) ? item.Alias : item.Title;
                 bindModel.Value = item.Duration;
-                bindModel.Tag = Time.ToString(item.Duration);
+                bindModel.Tag = Translated(Time.ToString(item.Duration));
                 bindModel.PopupText = item.Domain;
                 bindModel.Icon = item.IconFile;
                 resData.Add(bindModel);
