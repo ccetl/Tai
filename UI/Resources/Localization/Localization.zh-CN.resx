@@ -81,7 +81,7 @@
             <data name="page.settings.category.general" xml:space="preserve">
                 <value>常规</value>
             </data>
-            <data name="page.settings.category.integrations" xml:space="preserve">
+            <data name="page.settings.category.associations" xml:space="preserve">
                 <value>关联</value>
             </data>
             <data name="page.settings.category.behavior" xml:space="preserve">

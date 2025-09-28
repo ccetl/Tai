@@ -636,6 +636,15 @@ namespace UI.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 关联.
+        /// </summary>
+        internal static string page_settings_category_associations {
+            get {
+                return ResourceManager.GetString("page.settings.category.associations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 行为.
         /// </summary>
         internal static string page_settings_category_behavior {
@@ -659,15 +668,6 @@ namespace UI.Resources.Localization {
         internal static string page_settings_category_general {
             get {
                 return ResourceManager.GetString("page.settings.category.general", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 关联.
-        /// </summary>
-        internal static string page_settings_category_integrations {
-            get {
-                return ResourceManager.GetString("page.settings.category.integrations", resourceCulture);
             }
         }
         
